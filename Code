@@ -1,0 +1,22 @@
+using System;
+
+namespace P_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите числа 'a' и 'b', число 'а' должно быть меньше числа 'b'");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            for (int x = a; x <= b; x++)
+            {
+                double y = Math.Pow(x,2) + 3 * x - 17;
+
+                Console.WriteLine(y);
+            }
+        }
+    }
+}
